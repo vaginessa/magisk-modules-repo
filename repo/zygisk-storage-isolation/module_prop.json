@@ -1,0 +1,9 @@
+{
+  "id": "zygisk-storage-isolation",
+  "name": "Zygisk - Enhanced mode for Storage Isolation",
+  "version": "v27.1.0",
+  "versionCode": "82",
+  "author": "Rikka",
+  "description": "Enable Enhanced mode for Storage Isolation v7.5.0 or above. This module requires Magisk 24.0+ and Zygisk enabled.",
+  "updateJson": "https://rikkaapps.github.io/release/si_zygisk.json"
+}

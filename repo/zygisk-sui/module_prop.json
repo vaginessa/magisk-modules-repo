@@ -1,0 +1,9 @@
+{
+  "id": "zygisk-sui",
+  "name": "Zygisk - Sui",
+  "version": "v12.6.3",
+  "versionCode": "286",
+  "author": "Rikka",
+  "description": "Modern superuser interface implementation. This module requires Magisk 24.0+ and Zygisk enabled. DO NOT add SystemUI and Settings to DenyList.",
+  "updateJson": "https://rikkaapps.github.io/release/sui_zygisk.json"
+}

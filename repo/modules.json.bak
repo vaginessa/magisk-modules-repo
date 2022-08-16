@@ -21,6 +21,37 @@
       "updateJson": "https://raw.githubusercontent.com/Magisk-Modules-Repo/adb-ndk/master/update.json"
     },
     {
+      "id": "zygisk_shamiko",
+      "status": {
+        "versionCode": 120,
+        "version": "v0.5.2",
+        "zipUrl": "https://github.com/LSPosed/LSPosed.github.io/releases/download/shamiko-120/Shamiko-v0.5.2-120-release.zip",
+        "changelog": "https://github.com/LSPosed/LSPosed.github.io/raw/master/releases/shamiko_changelog.md"
+      },
+      "updateJson": "https://lsposed.github.io/releases/shamiko.json"
+    },
+    {
+      "id": "zygisk_lsposed",
+      "status": {
+        "versionCode": 0
+      },
+      "updateJson": "https://lsposed.github.io/LSPosed/release/zygisk.json"
+    },
+    {
+      "id": "zygisk-sui",
+      "status": {
+        "versionCode": 0
+      },
+      "updateJson": "https://rikkaapps.github.io/release/sui_zygisk.json"
+    },
+    {
+      "id": "zygisk-storage-isolation",
+      "status": {
+        "versionCode": 0
+      },
+      "updateJson": "https://rikkaapps.github.io/release/si_zygisk.json"
+    },
+    {
       "id": "HideNavBar",
       "status": {
         "version": "v13.0",
@@ -31,11 +62,18 @@
       "updateJson": ""
     },
     {
-      "id": "zygisk_shamiko",
+      "id": "quickswitch",
       "status": {
         "versionCode": 0
       },
-      "updateJson": "https://raw.githubusercontent.com/LSPosed/LSPosed.github.io/master/releases/shamiko.json"
+      "updateJson": "https://raw.githubusercontent.com/skittles9823/QuickSwitch/master/QuickSwitch.json"
+    },
+    {
+      "id": "uperf",
+      "status": {
+        "versionCode": 0
+      },
+      "updateJson": "https://github.com/yc9559/uperf/raw/master/version.json"
     }
   ]
 }

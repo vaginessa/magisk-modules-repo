@@ -28,7 +28,37 @@
         "zipUrl": "https://github.com/LSPosed/LSPosed.github.io/releases/download/shamiko-120/Shamiko-v0.5.2-120-release.zip",
         "changelog": "https://github.com/LSPosed/LSPosed.github.io/raw/master/releases/shamiko_changelog.md"
       },
-      "updateJson": "https://raw.githubusercontent.com/LSPosed/LSPosed.github.io/master/releases/shamiko.json"
+      "updateJson": "https://lsposed.github.io/releases/shamiko.json"
+    },
+    {
+      "id": "zygisk_lsposed",
+      "status": {
+        "version": "v1.8.3",
+        "versionCode": 6552,
+        "zipUrl": "https://github.com/LSPosed/LSPosed/releases/download/v1.8.3/LSPosed-v1.8.3-6552-zygisk-release.zip",
+        "changelog": "https://lsposed.github.io/LSPosed/release/changelog.md"
+      },
+      "updateJson": "https://lsposed.github.io/LSPosed/release/zygisk.json"
+    },
+    {
+      "id": "zygisk-sui",
+      "status": {
+        "versionCode": 286,
+        "version": "v12.6.3",
+        "zipUrl": "https://github.com/RikkaApps/Sui/releases/download/v12.6.3/sui-zygisk-v12.6.3-release.zip",
+        "changelog": "https://raw.githubusercontent.com/RikkaApps/Sui/master/template/magisk_module/CHANGELOG.md"
+      },
+      "updateJson": "https://rikkaapps.github.io/release/sui_zygisk.json"
+    },
+    {
+      "id": "zygisk-storage-isolation",
+      "status": {
+        "versionCode": 82,
+        "version": "v27.1.0",
+        "zipUrl": "https://github.com/RikkaApps/StorageRedirect-assets/releases/download/assets/storage-isolation-zygisk-v27.1.0-release.zip",
+        "changelog": "https://raw.githubusercontent.com/RikkaApps/RikkaApps.github.io/master/release/si_changelog.md"
+      },
+      "updateJson": "https://rikkaapps.github.io/release/si_zygisk.json"
     },
     {
       "id": "HideNavBar",
@@ -39,6 +69,26 @@
         "changelog": ""
       },
       "updateJson": ""
+    },
+    {
+      "id": "quickswitch",
+      "status": {
+        "version": "v3.3.1",
+        "versionCode": 3310,
+        "zipUrl": "https://github.com/skittles9823/QuickSwitch/releases/latest/download/QuickSwitch-Updater.zip",
+        "changelog": "https://raw.githubusercontent.com/skittles9823/QuickSwitch/master/CHANGELOG.md"
+      },
+      "updateJson": "https://raw.githubusercontent.com/skittles9823/QuickSwitch/master/QuickSwitch.json"
+    },
+    {
+      "id": "uperf",
+      "status": {
+        "versionCode": 220724,
+        "version": "v3",
+        "zipUrl": "https://github.com/yc9559/uperf/releases/download/dev-22.07.24/uperf-dev-22.07.24.zip",
+        "changelog": "https://github.com/yc9559/uperf/raw/master/changelog.md"
+      },
+      "updateJson": "https://github.com/yc9559/uperf/raw/master/version.json"
     }
   ]
 }

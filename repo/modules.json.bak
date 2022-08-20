@@ -1,79 +1,122 @@
 {
+  "timestamp": "2022-08-20 20:24:40.324397",
   "modules": [
     {
       "id": "busybox-ndk",
+      "updateJson": "https://raw.githubusercontent.com/Magisk-Modules-Repo/busybox-ndk/master/update.json",
+      "name": "Busybox for Android NDK",
+      "version": "1.34.1",
+      "versionCode": "13412",
+      "author": "osm0sis @ xda-developers",
+      "description": "Static busybox binary for all Android architectures built with the NDK",
       "status": {
-        "version": "1.34.1",
-        "versionCode": 13412,
         "zipUrl": "https://forum.xda-developers.com/attachments/update-busybox-installer-v1-34-1-all-signed-zip.5564955/",
         "changelog": "https://raw.githubusercontent.com/Magisk-Modules-Repo/busybox-ndk/master/README.md"
-      },
-      "updateJson": "https://raw.githubusercontent.com/Magisk-Modules-Repo/busybox-ndk/master/update.json"
+      }
     },
     {
       "id": "adb-ndk",
+      "updateJson": "https://raw.githubusercontent.com/Magisk-Modules-Repo/adb-ndk/master/update.json",
+      "name": "ADB & Fastboot for Android NDK",
+      "version": "1.0.41",
+      "versionCode": "104108",
+      "author": "osm0sis & Surge1223 @ xda-developers",
+      "description": "Static ARM adb and fastboot binaries for Android built with the NDK",
       "status": {
-        "version": "1.0.41",
-        "versionCode": 104108,
         "zipUrl": "https://forum.xda-developers.com/attachments/update-adb-installer-v1-0-41-signed-zip.5565065/",
         "changelog": "https://raw.githubusercontent.com/Magisk-Modules-Repo/adb-ndk/master/README.md"
-      },
-      "updateJson": "https://raw.githubusercontent.com/Magisk-Modules-Repo/adb-ndk/master/update.json"
+      }
     },
     {
       "id": "zygisk_shamiko",
+      "updateJson": "https://lsposed.github.io/releases/shamiko.json",
+      "name": "Shamiko",
+      "version": "v0.5.2 (120)",
+      "versionCode": "120",
+      "author": "LSPosed Developers",
+      "description": "\u3053\u308c\u3067\u52dd\u3063\u305f\u3068\u601d\u3046\u306a\u3088\u2015\u2015\u2015!!",
       "status": {
-        "versionCode": 120,
-        "version": "v0.5.2",
         "zipUrl": "https://github.com/LSPosed/LSPosed.github.io/releases/download/shamiko-120/Shamiko-v0.5.2-120-release.zip",
         "changelog": "https://github.com/LSPosed/LSPosed.github.io/raw/master/releases/shamiko_changelog.md"
-      },
-      "updateJson": "https://lsposed.github.io/releases/shamiko.json"
+      }
     },
     {
       "id": "zygisk_lsposed",
+      "updateJson": "https://lsposed.github.io/LSPosed/release/zygisk.json",
+      "name": "Zygisk - LSPosed",
+      "version": "v1.8.3 (6552)",
+      "versionCode": "6552",
+      "author": "LSPosed Developers",
+      "description": "Another enhanced implementation of Xposed Framework. Supports Android 8.1 ~ 13 Beta 1. Requires Magisk 24.0+ and Zygisk enabled.",
       "status": {
-        "versionCode": 0
-      },
-      "updateJson": "https://lsposed.github.io/LSPosed/release/zygisk.json"
+        "zipUrl": "https://github.com/LSPosed/LSPosed/releases/download/v1.8.3/LSPosed-v1.8.3-6552-zygisk-release.zip",
+        "changelog": "https://lsposed.github.io/LSPosed/release/changelog.md"
+      }
     },
     {
       "id": "zygisk-sui",
+      "updateJson": "https://rikkaapps.github.io/release/sui_zygisk.json",
+      "name": "Zygisk - Sui",
+      "version": "v12.6.3",
+      "versionCode": "286",
+      "author": "Rikka",
+      "description": "Modern superuser interface implementation. This module requires Magisk 24.0+ and Zygisk enabled. DO NOT add SystemUI and Settings to DenyList.",
       "status": {
-        "versionCode": 0
-      },
-      "updateJson": "https://rikkaapps.github.io/release/sui_zygisk.json"
+        "zipUrl": "https://github.com/RikkaApps/Sui/releases/download/v12.6.3/sui-zygisk-v12.6.3-release.zip",
+        "changelog": "https://raw.githubusercontent.com/RikkaApps/Sui/master/template/magisk_module/CHANGELOG.md"
+      }
     },
     {
       "id": "zygisk-storage-isolation",
+      "updateJson": "https://rikkaapps.github.io/release/si_zygisk.json",
+      "name": "Zygisk - Enhanced mode for Storage Isolation",
+      "version": "v27.1.0",
+      "versionCode": "82",
+      "author": "Rikka",
+      "description": "Enable Enhanced mode for Storage Isolation v7.5.0 or above. This module requires Magisk 24.0+ and Zygisk enabled.",
       "status": {
-        "versionCode": 0
-      },
-      "updateJson": "https://rikkaapps.github.io/release/si_zygisk.json"
+        "zipUrl": "https://github.com/RikkaApps/StorageRedirect-assets/releases/download/assets/storage-isolation-zygisk-v27.1.0-release.zip",
+        "changelog": "https://raw.githubusercontent.com/RikkaApps/RikkaApps.github.io/master/release/si_changelog.md"
+      }
     },
     {
       "id": "HideNavBar",
+      "updateJson": "",
       "status": {
-        "version": "v13.0",
-        "versionCode": 42,
         "zipUrl": "https://github.com/Magisk-Modules-Repo/HideNavBar/releases/download/v13.0/Immersive-Gestures-.QT._v13.0_.42.zip",
         "changelog": ""
       },
-      "updateJson": ""
+      "name": "Fullscreen/Immersive Gestures (Q-T)",
+      "version": "v13.0",
+      "versionCode": "42",
+      "author": "DanGLES3",
+      "description": "Customize Android 10-13's navigation gestures "
     },
     {
       "id": "quickswitch",
+      "updateJson": "https://raw.githubusercontent.com/skittles9823/QuickSwitch/master/QuickSwitch.json",
+      "name": "QuickSwitch",
+      "version": "v3.3.1",
+      "versionCode": "3310",
+      "author": "The Lawnchair team",
+      "description": "Quickstep enabler for supported launchers",
       "status": {
-        "versionCode": 0
-      },
-      "updateJson": "https://raw.githubusercontent.com/skittles9823/QuickSwitch/master/QuickSwitch.json"
+        "zipUrl": "https://github.com/skittles9823/QuickSwitch/releases/latest/download/QuickSwitch-Updater.zip",
+        "changelog": "https://raw.githubusercontent.com/skittles9823/QuickSwitch/master/CHANGELOG.md"
+      }
     },
     {
       "id": "uperf",
+      "updateJson": "https://github.com/yc9559/uperf/raw/master/version.json",
+      "name": "Uperf",
+      "version": "v3(22.07.24)",
+      "versionCode": "220724",
+      "author": "Matt Yang",
+      "description": "Userspace performance controller for android. Repo: https://github.com/yc9559/uperf/",
       "status": {
-        "versionCode": 0
-      },
-      "updateJson": "https://github.com/yc9559/uperf/raw/master/version.json"
+        "zipUrl": "https://github.com/yc9559/uperf/releases/download/dev-22.07.24/uperf-dev-22.07.24.zip",
+        "changelog": "https://github.com/yc9559/uperf/raw/master/changelog.md"
+      }
     }
   ]
 }

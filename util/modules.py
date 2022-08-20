@@ -22,6 +22,8 @@ class MDict:
         self._dict[key] = value
         if type(value) is dict:
             setattr(self, key, MDict(value))
+        elif type(value) is list:
+            setattr(self, key, MList(value))
         else:
             setattr(self, key, value)
 
@@ -31,20 +33,19 @@ class MDict:
         else:
             return False
 
+    def __getattr__(self, item):
+        if item not in self.__dict__:
+            raise KeyError("{0} did not get!".format(item))
+
     @property
     def dict(self):
         return self._dict
 
     @dict.setter
     def dict(self, _dict):
-        self._dict = _dict
         for key in _dict.keys():
-            item = _dict.get(key)
-
-            if type(item) is dict:
-                setattr(self, key, MDict(item))
-            else:
-                setattr(self, key, item)
+            value = _dict.get(key)
+            self.__setitem__(key, value)
 
     def get(self, key):
         return self._dict.get(key)
@@ -81,11 +82,6 @@ def load_file(json_file: Path):
 def write_file(json_dict: dict, json_file: Path):
     with open(json_file, 'w') as f:
         json.dump(json_dict, f, indent=2)
-
-
-def load_file_modules(json_file: Path):
-    modules_list = MList(load_file(json_file).get("modules"))
-    return modules_list
 
 
 def load_url(url: str):

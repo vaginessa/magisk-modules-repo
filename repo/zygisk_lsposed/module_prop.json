@@ -1,9 +1,0 @@
-{
-  "id": "zygisk_lsposed",
-  "name": "Zygisk - LSPosed",
-  "version": "v1.8.3 (6552)",
-  "versionCode": "6552",
-  "author": "LSPosed Developers",
-  "description": "Another enhanced implementation of Xposed Framework. Supports Android 8.1 ~ 13 Beta 1. Requires Magisk 24.0+ and Zygisk enabled.",
-  "updateJson": "https://lsposed.github.io/LSPosed/release/zygisk.json"
-}

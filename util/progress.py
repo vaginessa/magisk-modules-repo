@@ -10,7 +10,7 @@ class Progress:
         self._progress = 0
 
     def __del__(self):
-        print()
+        print("\n")
 
     def progress_default(self):
         self._progress += 1

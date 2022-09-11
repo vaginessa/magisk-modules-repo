@@ -33,6 +33,10 @@ class _List(list):
             self.extend(seq)
 
     @property
+    def size(self):
+        return self.__len__()
+
+    @property
     def dict2dict_(self):
         for i in range(self.__len__()):
             o = self.__getitem__(i)

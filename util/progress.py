@@ -8,11 +8,9 @@ class Progress:
         self._start_time_last = self._start_time_total
         self._bar_length = bar_length
         self._progress = 0
-        
-        print()
 
     def __del__(self):
-        print("\n")
+        print()
 
     def progress_default(self):
         self._progress += 1

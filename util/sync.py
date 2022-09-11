@@ -83,7 +83,7 @@ class Sync:
                     }
 
             else:
-                print("{0} a no updateJson".format(item.id))
+                print("{0} have no updateJson".format(item.id))
                 if download_all:
                     self.download_file(item.status.get("zipUrl"), file_dir)
                     self.update_info(item, file_dir)

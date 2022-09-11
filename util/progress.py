@@ -9,6 +9,9 @@ class Progress:
         self._bar_length = bar_length
         self._progress = 0
 
+    def __del__(self):
+        print()
+
     def progress_default(self):
         self._progress += 1
 

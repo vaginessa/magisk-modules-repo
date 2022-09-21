@@ -15,12 +15,18 @@ REPO_BRANCH = "main"
 REPO_URL = "{0}/{1}/{2}".format(GITHUB_RAW_URL, MODULE_REPO, REPO_BRANCH)
 
 
+def update_file(url, file):
+    for f in sorted(glob("{0}/*".format(file.parent))):
+        os.remove(f)
+    download_by_requests(url, file)
+
+
 def have_update_json(item, file):
     update_json = load_json_url(item.updateJson).dict_
 
     if "versionCode" in item:
         if int(update_json.versionCode) > int(item.versionCode):
-            download_by_requests(update_json.zipUrl, file)
+            update_file(update_json.zipUrl, file)
             update_info(item, file)
             shutil.move(file, file.parent.joinpath("{0}.zip".format(item.version.replace(" ", "_"))))
 
@@ -58,9 +64,6 @@ def pull(json_dict: dict_, modules_folder: Path, json_file: Path, update_all=Tru
         item_dir = modules_folder.joinpath(item.id)
         if not item_dir.exists():
             os.makedirs(item_dir)
-        else:
-            for file in sorted(glob("{0}/*".format(item_dir))):
-                os.remove(file)
 
         file = item_dir.joinpath("{0}.zip".format(item.id))
 

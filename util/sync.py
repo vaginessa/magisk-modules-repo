@@ -31,7 +31,7 @@ def have_update_json(item, file):
             shutil.move(file, file.parent.joinpath("{0}.zip".format(item.version.replace(" ", "_"))))
 
             item.status = {
-                "zipUrl": "{0}/{1}/{2}.zip".format(REPO_URL, item.id, item.version.replace(" ", "_")),
+                "zipUrl": "{0}/modules/{1}/{2}.zip".format(REPO_URL, item.id, item.version.replace(" ", "_")),
                 "changelog": update_json.changelog
             }
 
@@ -41,7 +41,7 @@ def have_update_json(item, file):
         shutil.move(file, file.parent.joinpath("{0}.zip".format(item.version.replace(" ", "_"))))
 
         item["status"] = {
-            "zipUrl": "{0}/{1}/{2}.zip".format(REPO_URL, item.id, item.version.replace(" ", "_")),
+            "zipUrl": "{0}/modules/{1}/{2}.zip".format(REPO_URL, item.id, item.version.replace(" ", "_")),
             "changelog": update_json.changelog
         }
 

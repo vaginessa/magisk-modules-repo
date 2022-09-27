@@ -1,5 +1,5 @@
 {
-  "timestamp": "2022-09-27 17:04:49.045305",
+  "timestamp": "2022-09-27 17:06:54.239596",
   "modules": [
     {
       "id": "busybox-ndk",
@@ -10,7 +10,7 @@
       "author": "osm0sis @ xda-developers",
       "description": "Static busybox binary for all Android architectures built with the NDK",
       "status": {
-        "zipUrl": "https://raw.githubusercontent.com/ya0211/magisk-modules-repo/main/busybox-ndk/1.34.1.zip",
+        "zipUrl": "https://raw.githubusercontent.com/ya0211/magisk-modules-repo/main/modules/busybox-ndk/1.34.1.zip",
         "changelog": "https://raw.githubusercontent.com/Magisk-Modules-Repo/busybox-ndk/master/README.md"
       }
     },
@@ -23,7 +23,7 @@
       "author": "osm0sis & Surge1223 @ xda-developers",
       "description": "Static ARM adb and fastboot binaries for Android built with the NDK",
       "status": {
-        "zipUrl": "https://raw.githubusercontent.com/ya0211/magisk-modules-repo/main/adb-ndk/1.0.41.zip",
+        "zipUrl": "https://raw.githubusercontent.com/ya0211/magisk-modules-repo/main/modules/adb-ndk/1.0.41.zip",
         "changelog": "https://raw.githubusercontent.com/Magisk-Modules-Repo/adb-ndk/master/README.md"
       }
     },
@@ -36,7 +36,7 @@
       "author": "LSPosed Developers",
       "description": "\u3053\u308c\u3067\u52dd\u3063\u305f\u3068\u601d\u3046\u306a\u3088\u2015\u2015\u2015!!",
       "status": {
-        "zipUrl": "https://raw.githubusercontent.com/ya0211/magisk-modules-repo/main/zygisk_shamiko/v0.5.2_(120).zip",
+        "zipUrl": "https://raw.githubusercontent.com/ya0211/magisk-modules-repo/main/modules/zygisk_shamiko/v0.5.2_(120).zip",
         "changelog": "https://github.com/LSPosed/LSPosed.github.io/raw/master/releases/shamiko_changelog.md"
       }
     },
@@ -49,7 +49,7 @@
       "author": "LSPosed Developers",
       "description": "Another enhanced implementation of Xposed Framework. Supports Android 8.1 ~ 13. Requires Magisk 24.0+ and Zygisk enabled.",
       "status": {
-        "zipUrl": "https://raw.githubusercontent.com/ya0211/magisk-modules-repo/main/zygisk_lsposed/v1.8.4_(6609).zip",
+        "zipUrl": "https://raw.githubusercontent.com/ya0211/magisk-modules-repo/main/modules/zygisk_lsposed/v1.8.4_(6609).zip",
         "changelog": "https://lsposed.github.io/LSPosed/release/changelog.md"
       }
     },
@@ -62,7 +62,7 @@
       "author": "Rikka",
       "description": "Modern superuser interface implementation. This module requires Magisk 24.0+ and Zygisk enabled. DO NOT add SystemUI and Settings to DenyList.",
       "status": {
-        "zipUrl": "https://raw.githubusercontent.com/ya0211/magisk-modules-repo/main/zygisk-sui/v12.6.3.zip",
+        "zipUrl": "https://raw.githubusercontent.com/ya0211/magisk-modules-repo/main/modules/zygisk-sui/v12.6.3.zip",
         "changelog": "https://raw.githubusercontent.com/RikkaApps/Sui/master/template/magisk_module/CHANGELOG.md"
       }
     },
@@ -75,7 +75,7 @@
       "author": "Rikka",
       "description": "Enable Enhanced mode for Storage Isolation v7.5.0 or above. This module requires Magisk 24.0+ and Zygisk enabled.",
       "status": {
-        "zipUrl": "https://raw.githubusercontent.com/ya0211/magisk-modules-repo/main/zygisk-storage-isolation/v27.1.0.zip",
+        "zipUrl": "https://raw.githubusercontent.com/ya0211/magisk-modules-repo/main/modules/zygisk-storage-isolation/v27.1.0.zip",
         "changelog": "https://raw.githubusercontent.com/RikkaApps/RikkaApps.github.io/master/release/si_changelog.md"
       }
     },
@@ -101,7 +101,7 @@
       "author": "The Lawnchair team",
       "description": "Quickstep enabler for supported launchers",
       "status": {
-        "zipUrl": "https://raw.githubusercontent.com/ya0211/magisk-modules-repo/main/quickswitch/v3.3.1.zip",
+        "zipUrl": "https://raw.githubusercontent.com/ya0211/magisk-modules-repo/main/modules/quickswitch/v3.3.1.zip",
         "changelog": "https://raw.githubusercontent.com/skittles9823/QuickSwitch/master/CHANGELOG.md"
       }
     },
@@ -114,7 +114,7 @@
       "author": "Matt Yang",
       "description": "Userspace performance controller for android. Repo: https://github.com/yc9559/uperf/",
       "status": {
-        "zipUrl": "https://raw.githubusercontent.com/ya0211/magisk-modules-repo/main/uperf/v3(22.09.04).zip",
+        "zipUrl": "https://raw.githubusercontent.com/ya0211/magisk-modules-repo/main/modules/uperf/v3(22.09.04).zip",
         "changelog": "https://github.com/yc9559/uperf/raw/master/changelog.md"
       }
     }

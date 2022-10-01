@@ -67,14 +67,19 @@ def pull(json_dict: dict_, modules_folder: Path, json_file: Path, update_all=Tru
 
         file = item_dir.joinpath("{0}.zip".format(item.id))
 
-        if item.updateJson != "":
+        if item.updateJson.endswith("json"):
             have_update_json(item, file)
 
         else:
             if update_all:
-                download_by_requests(item.status.get("zipUrl"), file)
+                download_by_requests(item.updateJson, file)
                 update_info(item, file)
-                os.remove(file)
+                shutil.move(file, file.parent.joinpath("{0}.zip".format(item.version.replace(" ", "_"))))
+
+                item["status"] = {
+                    "zipUrl": "{0}/modules/{1}/{2}.zip".format(REPO_URL, item.id, item.version.replace(" ", "_")),
+                    "changelog": ""
+                }
 
         pro.progress_default()
 

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2022-09-27 17:06:54.239596",
+  "timestamp": "2022-10-01 18:16:38.565606",
   "modules": [
     {
       "id": "busybox-ndk",
@@ -81,16 +81,16 @@
     },
     {
       "id": "HideNavBar",
-      "updateJson": "",
-      "status": {
-        "zipUrl": "https://github.com/Magisk-Modules-Repo/HideNavBar/releases/download/v13.0/Immersive-Gestures-.QT._v13.0_.42.zip",
-        "changelog": ""
-      },
+      "updateJson": "https://github.com/Magisk-Modules-Repo/HideNavBar/releases/download/v13.0/Immersive-Gestures-.QT._v13.0_.42.zip",
       "name": "Fullscreen/Immersive Gestures (Q-T)",
       "version": "v13.0",
       "versionCode": "42",
       "author": "DanGLES3",
-      "description": "Customize Android 10-13's navigation gestures "
+      "description": "Customize Android 10-13's navigation gestures ",
+      "status": {
+        "zipUrl": "https://raw.githubusercontent.com/ya0211/magisk-modules-repo/main/modules/HideNavBar/v13.0.zip",
+        "changelog": ""
+      }
     },
     {
       "id": "quickswitch",

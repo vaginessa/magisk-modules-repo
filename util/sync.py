@@ -30,7 +30,7 @@ def have_update_json(item, file):
             update_info(item, file)
             shutil.move(file, file.parent.joinpath("{0}.zip".format(item.version.replace(" ", "_"))))
 
-            item.status = {
+            item.states = {
                 "zipUrl": "{0}/modules/{1}/{2}.zip".format(REPO_URL, item.id, item.version.replace(" ", "_")),
                 "changelog": update_json.changelog
             }
@@ -40,7 +40,7 @@ def have_update_json(item, file):
         update_info(item, file)
         shutil.move(file, file.parent.joinpath("{0}.zip".format(item.version.replace(" ", "_"))))
 
-        item["status"] = {
+        item["states"] = {
             "zipUrl": "{0}/modules/{1}/{2}.zip".format(REPO_URL, item.id, item.version.replace(" ", "_")),
             "changelog": update_json.changelog
         }
@@ -76,7 +76,7 @@ def pull(json_dict: dict_, modules_folder: Path, json_file: Path, update_all=Tru
                 update_info(item, file)
                 shutil.move(file, file.parent.joinpath("{0}.zip".format(item.version.replace(" ", "_"))))
 
-                item["status"] = {
+                item["states"] = {
                     "zipUrl": "{0}/modules/{1}/{2}.zip".format(REPO_URL, item.id, item.version.replace(" ", "_")),
                     "changelog": ""
                 }

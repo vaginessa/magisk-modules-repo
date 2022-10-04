@@ -83,13 +83,13 @@ def pull(json_dict: dict_, modules_folder: Path, json_file: Path, update_all=Tru
 
         pro.progress_default()
 
-    json_dict.timestamp = str(datetime.now())
+    json_dict.timestamp = str(datetime.now().strftime("%m-%d %H:%M:%S.%f"))
     json_dict.modules = json_list.dict_2dict
     write_json(json_dict.dict, json_file)
 
 
 def push(cwd_folder: Path):
-    msg = "timestamp: {0}".format(datetime.now().strftime("%m-%d %H:%M:%S.%f"))
+    msg = "timestamp: {0}".format(datetime.now())
     subprocess.run(['git', 'add', '.'], cwd=cwd_folder.as_posix())
     subprocess.run(['git', 'commit', '-m', msg], cwd=cwd_folder.as_posix())
     subprocess.run(['git', 'push', '-u', 'origin', 'main'], cwd=cwd_folder.as_posix())

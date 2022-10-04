@@ -89,7 +89,7 @@ def pull(json_dict: dict_, modules_folder: Path, json_file: Path, update_all=Tru
 
 
 def push(cwd_folder: Path):
-    msg = "timestamp: {0}".format(datetime.now())
+    msg = "timestamp: {0}".format(datetime.now().strftime("%m-%d %H:%M:%S.%f"))
     subprocess.run(['git', 'add', '.'], cwd=cwd_folder.as_posix())
     subprocess.run(['git', 'commit', '-m', msg], cwd=cwd_folder.as_posix())
     subprocess.run(['git', 'push', '-u', 'origin', 'main'], cwd=cwd_folder.as_posix())

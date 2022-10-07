@@ -1,5 +1,5 @@
 {
-  "timestamp": "10-04 13:02:54.860754",
+  "timestamp": "2022-10-07 15:13:24.363184",
   "modules": [
     {
       "id": "busybox-ndk",
@@ -57,12 +57,12 @@
       "id": "zygisk-sui",
       "updateJson": "https://rikkaapps.github.io/release/sui_zygisk.json",
       "name": "Zygisk - Sui",
-      "version": "v12.6.3",
-      "versionCode": "286",
+      "version": "v12.7.1",
+      "versionCode": "296",
       "author": "Rikka",
       "description": "Modern superuser interface implementation. This module requires Magisk 24.0+ and Zygisk enabled. DO NOT add SystemUI and Settings to DenyList.",
       "states": {
-        "zipUrl": "https://raw.githubusercontent.com/ya0211/magisk-modules-repo/main/modules/zygisk-sui/v12.6.3.zip",
+        "zipUrl": "https://raw.githubusercontent.com/ya0211/magisk-modules-repo/main/modules/zygisk-sui/v12.7.1.zip",
         "changelog": "https://raw.githubusercontent.com/RikkaApps/Sui/master/template/magisk_module/CHANGELOG.md"
       }
     },

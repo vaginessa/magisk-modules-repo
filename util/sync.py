@@ -83,7 +83,7 @@ def pull(json_dict: dict_, modules_folder: Path, json_file: Path, update_all=Tru
 
         pro.progress_default()
 
-    json_dict.timestamp = str(datetime.now().strftime("%m-%d %H:%M:%S.%f"))
+    json_dict.timestamp = str(datetime.now())
     json_dict.modules = json_list.dict_2dict
     write_json(json_dict.dict, json_file)
 

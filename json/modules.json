@@ -1,5 +1,5 @@
 {
-  "timestamp": "2022-10-22 21:48:01.460233",
+  "timestamp": "2022-10-22 22:24:58.359244",
   "modules": [
     {
       "id": "busybox-ndk",
@@ -116,6 +116,45 @@
       "states": {
         "zipUrl": "https://raw.githubusercontent.com/ya0211/magisk-modules-repo/main/modules/uperf/v3(22.09.04).zip",
         "changelog": "https://github.com/yc9559/uperf/raw/master/changelog.md"
+      }
+    },
+    {
+      "id": "zygisk_ifw_enhance",
+      "updateJson": "https://github.com/Kr328/Riru-IFWEnhance/releases/latest/download/zygisk-ifw-enhance.json",
+      "name": "Zygisk - IFW Enhance",
+      "version": "v19",
+      "versionCode": "19",
+      "author": "Kr328",
+      "description": "Allows Intent Firewall to filter results of queryIntent(Activities/Services) APIs.",
+      "states": {
+        "zipUrl": "https://raw.githubusercontent.com/ya0211/magisk-modules-repo/main/modules/zygisk_ifw_enhance/v19.zip",
+        "changelog": "https://github.com/Kr328/Riru-IFWEnhance/releases/download/v19/changelog.md"
+      }
+    },
+    {
+      "id": "zygisk_clipboard_whitelist",
+      "updateJson": "https://github.com/Kr328/Riru-ClipboardWhitelist/releases/latest/download/zygisk-clipboard-whitelist.json",
+      "name": "Zygisk - Clipboard Whitelist",
+      "version": "v23",
+      "versionCode": "23",
+      "author": "Kr328",
+      "description": "Allow apps access clipboard in background.",
+      "states": {
+        "zipUrl": "https://raw.githubusercontent.com/ya0211/magisk-modules-repo/main/modules/zygisk_clipboard_whitelist/v23.zip",
+        "changelog": "https://github.com/Kr328/Riru-ClipboardWhitelist/releases/download/v23/changelog.md"
+      }
+    },
+    {
+      "id": "safetynet-fix",
+      "updateJson": "https://raw.githubusercontent.com/kdrag0n/safetynet-fix/master/update.json",
+      "name": "Universal SafetyNet Fix",
+      "version": "v2.3.1",
+      "versionCode": "20301",
+      "author": "kdrag0n",
+      "description": "A universal fix for SafetyNet on Android 8\u201312 devices with hardware attestation and unlocked bootloaders.",
+      "states": {
+        "zipUrl": "https://raw.githubusercontent.com/ya0211/magisk-modules-repo/main/modules/safetynet-fix/v2.3.1.zip",
+        "changelog": "https://raw.githubusercontent.com/kdrag0n/safetynet-fix/master/CHANGELOG.md"
       }
     }
   ]

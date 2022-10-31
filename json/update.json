@@ -1,0 +1,5 @@
+{
+  "version": "0.3.1",
+  "versionCode": 31,
+  "apkUrl": "https://github.com/ya0211/MRepo/releases/download/v${version}/mrepo-${version}-${abi}-release.apk"
+}

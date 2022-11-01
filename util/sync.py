@@ -15,35 +15,41 @@ REPO_BRANCH = "main"
 REPO_URL = "{0}/{1}/{2}".format(GITHUB_RAW_URL, MODULE_REPO, REPO_BRANCH)
 
 
-def update_file(url, file):
+def update_file(url: str, file: Path):
     for f in sorted(glob("{0}/*".format(file.parent))):
         os.remove(f)
     download_by_requests(url, file)
 
 
-def have_update_json(item, file):
-    update_json = load_json_url(item.updateJson).dict_
+def upload_from_json(item:  dict_, update_json: dict_, file: Path):
+    update_file(update_json.zipUrl, file)
+    update_info(item, file)
+    shutil.move(file, file.parent.joinpath("{0}.zip".format(item.version.replace(" ", "_"))))
 
-    if "versionCode" in item:
-        if int(update_json.versionCode) > int(item.versionCode):
-            update_file(update_json.zipUrl, file)
-            update_info(item, file)
-            shutil.move(file, file.parent.joinpath("{0}.zip".format(item.version.replace(" ", "_"))))
+    item.states = {
+        "zipUrl": "{0}/modules/{1}/{2}.zip".format(REPO_URL, item.id, item.version.replace(" ", "_")),
+        "changelog": update_json.changelog
+    }
 
-            item.states = {
-                "zipUrl": "{0}/modules/{1}/{2}.zip".format(REPO_URL, item.id, item.version.replace(" ", "_")),
-                "changelog": update_json.changelog
-            }
 
-    elif not file.exists():
-        download_by_requests(update_json.zipUrl, file)
-        update_info(item, file)
-        shutil.move(file, file.parent.joinpath("{0}.zip".format(item.version.replace(" ", "_"))))
+def upload_from_url(item: dict_, file: Path):
+    update_info(item, file)
+    shutil.move(file, file.parent.joinpath("{0}.zip".format(item.version.replace(" ", "_"))))
 
-        item["states"] = {
-            "zipUrl": "{0}/modules/{1}/{2}.zip".format(REPO_URL, item.id, item.version.replace(" ", "_")),
-            "changelog": update_json.changelog
-        }
+    item["states"] = {
+        "zipUrl": "{0}/modules/{1}/{2}.zip".format(REPO_URL, item.id, item.version.replace(" ", "_")),
+        "changelog": ""
+    }
+
+
+def upload_from_local(item: dict_, file: Path, out: Path):
+    update_info(item, file)
+    shutil.copy(file, out.joinpath("{0}.zip".format(item.version.replace(" ", "_"))))
+
+    item["states"] = {
+        "zipUrl": "{0}/modules/{1}/{2}.zip".format(REPO_URL, item.id, item.version.replace(" ", "_")),
+        "changelog": ""
+    }
 
 
 def update_info(item: dict_, file: Path):
@@ -55,7 +61,13 @@ def update_info(item: dict_, file: Path):
     item.description = prop.description
 
 
-def pull(json_dict: dict_, modules_folder: Path, json_file: Path, update_all=True):
+def pull(
+        json_dict: dict_,
+        modules_folder: Path,
+        local_folder: Path,
+        json_file: Path,
+        update_all=True
+):
     json_list = list_(json_dict.modules).dict2dict_
 
     pro = Progress(json_list.size, bar_length=60)
@@ -67,19 +79,29 @@ def pull(json_dict: dict_, modules_folder: Path, json_file: Path, update_all=Tru
 
         file = item_dir.joinpath("{0}.zip".format(item.id))
 
-        if item.updateJson.endswith("json"):
-            have_update_json(item, file)
+        if item.update.startswith("http"):
+            if item.update.endswith("json"):
+                update_json = load_json_url(item.update).dict_
+                if "versionCode" in item:
+                    if int(update_json.versionCode) > int(item.versionCode):
+                        upload_from_json(item, update_json, file)
+                elif not file.exists():
+                    upload_from_json(item, update_json, file)
 
+            elif item.update.endswith("zip"):
+                if update_all:
+                    update_file(item.update, file)
+                    upload_from_url(item, file)
         else:
-            if update_all:
-                download_by_requests(item.updateJson, file)
-                update_info(item, file)
-                shutil.move(file, file.parent.joinpath("{0}.zip".format(item.version.replace(" ", "_"))))
-
-                item["states"] = {
-                    "zipUrl": "{0}/modules/{1}/{2}.zip".format(REPO_URL, item.id, item.version.replace(" ", "_")),
-                    "changelog": ""
-                }
+            if item.update.endswith("zip"):
+                file = local_folder.joinpath(item.update)
+                if file.exists():
+                    prop = get_props(file).dict_
+                    if "versionCode" in item:
+                        if int(prop.versionCode) > int(item.versionCode):
+                            upload_from_local(item, file, item_dir)
+                    else:
+                        upload_from_local(item, file, item_dir)
 
         pro.progress_default()
 
@@ -99,11 +121,12 @@ def main():
     root_folder = Path(__file__).resolve().parent
     modules_folder = root_folder.parent.joinpath("modules")
     json_folder = root_folder.parent.joinpath("json")
+    local_folder = root_folder.parent.joinpath("local")
     file = json_folder.joinpath("modules.json")
 
     json_dict = load_json(file).dict_
 
-    pull(json_dict, modules_folder, file)
+    pull(json_dict, modules_folder, local_folder, file)
     push(root_folder.parent)
 
 

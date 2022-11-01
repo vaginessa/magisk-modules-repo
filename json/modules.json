@@ -1,9 +1,9 @@
 {
-  "timestamp": "2022-11-01 15:58:19.357061",
+  "timestamp": "2022-11-01 19:38:28.455209",
   "modules": [
     {
       "id": "busybox-ndk",
-      "updateJson": "https://raw.githubusercontent.com/Magisk-Modules-Repo/busybox-ndk/master/update.json",
+      "update": "https://raw.githubusercontent.com/Magisk-Modules-Repo/busybox-ndk/master/update.json",
       "name": "Busybox for Android NDK",
       "version": "1.34.1",
       "versionCode": "13412",
@@ -16,7 +16,7 @@
     },
     {
       "id": "adb-ndk",
-      "updateJson": "https://raw.githubusercontent.com/Magisk-Modules-Repo/adb-ndk/master/update.json",
+      "update": "https://raw.githubusercontent.com/Magisk-Modules-Repo/adb-ndk/master/update.json",
       "name": "ADB & Fastboot for Android NDK",
       "version": "1.0.41",
       "versionCode": "104108",
@@ -29,7 +29,7 @@
     },
     {
       "id": "zygisk_shamiko",
-      "updateJson": "https://lsposed.github.io/releases/shamiko.json",
+      "update": "https://lsposed.github.io/releases/shamiko.json",
       "name": "Shamiko",
       "version": "v0.5.2 (120)",
       "versionCode": "120",
@@ -42,7 +42,7 @@
     },
     {
       "id": "zygisk_lsposed",
-      "updateJson": "https://lsposed.github.io/LSPosed/release/zygisk.json",
+      "update": "https://lsposed.github.io/LSPosed/release/zygisk.json",
       "name": "Zygisk - LSPosed",
       "version": "v1.8.4 (6609)",
       "versionCode": "6609",
@@ -55,7 +55,7 @@
     },
     {
       "id": "zygisk-sui",
-      "updateJson": "https://rikkaapps.github.io/release/sui_zygisk.json",
+      "update": "https://rikkaapps.github.io/release/sui_zygisk.json",
       "name": "Zygisk - Sui",
       "version": "v12.7.2",
       "versionCode": "300",
@@ -68,7 +68,7 @@
     },
     {
       "id": "zygisk-storage-isolation",
-      "updateJson": "https://rikkaapps.github.io/release/si_zygisk.json",
+      "update": "https://rikkaapps.github.io/release/si_zygisk.json",
       "name": "Zygisk - Enhanced mode for Storage Isolation",
       "version": "v27.1.0",
       "versionCode": "82",
@@ -81,7 +81,7 @@
     },
     {
       "id": "HideNavBar",
-      "updateJson": "https://github.com/Magisk-Modules-Repo/HideNavBar/releases/download/v13.0/Immersive-Gestures-.QT._v13.0_.42.zip",
+      "update": "https://github.com/Magisk-Modules-Repo/HideNavBar/releases/download/v13.0/Immersive-Gestures-.QT._v13.0_.42.zip",
       "name": "Fullscreen/Immersive Gestures (Q-T)",
       "version": "v13.0",
       "versionCode": "42",
@@ -94,7 +94,7 @@
     },
     {
       "id": "quickswitch",
-      "updateJson": "https://raw.githubusercontent.com/skittles9823/QuickSwitch/master/QuickSwitch.json",
+      "update": "https://raw.githubusercontent.com/skittles9823/QuickSwitch/master/QuickSwitch.json",
       "name": "QuickSwitch",
       "version": "v3.3.1",
       "versionCode": "3310",
@@ -107,7 +107,7 @@
     },
     {
       "id": "uperf",
-      "updateJson": "https://github.com/yc9559/uperf/raw/master/version.json",
+      "update": "https://github.com/yc9559/uperf/raw/master/version.json",
       "name": "Uperf",
       "version": "v3(22.09.04)",
       "versionCode": "220904",
@@ -120,7 +120,7 @@
     },
     {
       "id": "zygisk_ifw_enhance",
-      "updateJson": "https://github.com/Kr328/Riru-IFWEnhance/releases/latest/download/zygisk-ifw-enhance.json",
+      "update": "https://github.com/Kr328/Riru-IFWEnhance/releases/latest/download/zygisk-ifw-enhance.json",
       "name": "Zygisk - IFW Enhance",
       "version": "v19",
       "versionCode": "19",
@@ -133,7 +133,7 @@
     },
     {
       "id": "zygisk_clipboard_whitelist",
-      "updateJson": "https://github.com/Kr328/Riru-ClipboardWhitelist/releases/latest/download/zygisk-clipboard-whitelist.json",
+      "update": "https://github.com/Kr328/Riru-ClipboardWhitelist/releases/latest/download/zygisk-clipboard-whitelist.json",
       "name": "Zygisk - Clipboard Whitelist",
       "version": "v23",
       "versionCode": "23",
@@ -146,7 +146,7 @@
     },
     {
       "id": "safetynet-fix",
-      "updateJson": "https://raw.githubusercontent.com/kdrag0n/safetynet-fix/master/update.json",
+      "update": "https://raw.githubusercontent.com/kdrag0n/safetynet-fix/master/update.json",
       "name": "Universal SafetyNet Fix",
       "version": "v2.3.1",
       "versionCode": "20301",

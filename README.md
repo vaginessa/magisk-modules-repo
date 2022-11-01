@@ -8,8 +8,6 @@
 3. `python3 sync.py` to synchronize
 
 ### Upload from updateJson
-For modules that already have updateJson
-
 ```json
 {
   "id": "zygisk_shamiko",
@@ -18,8 +16,6 @@ For modules that already have updateJson
 ```
 
 ### Upload from url
-For modules with a download link
-
 ```json
 {
   "id": "zygisk_shamiko",
@@ -28,8 +24,6 @@ For modules with a download link
 ```
 
 ### Upload from local
-For modules without download links or your own
-
 - Create a new folder named `local` in the same directory as `modules`
 - Put the `zip` file into the `local` folder
 ```json

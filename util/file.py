@@ -43,9 +43,15 @@ class _GetProps(_Base):
         _list = _props.split('\n')
 
         for item in _list:
-            if '=' in item:
-                k, v = item.split('=')
-                self._dict[k] = v
+            prop = item.split('=')
+            if len(prop) != 2:
+                continue
+            key, value = prop
+
+            if key == "" or key.startswith("#"):
+                continue
+
+            self._dict[key] = value
 
 
 load_json = _LoadJson

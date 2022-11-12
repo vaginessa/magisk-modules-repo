@@ -1,5 +1,5 @@
 {
-  "timestamp": "2022-11-03 22:37:47.803286",
+  "timestamp": "2022-11-12 20:59:14.046710",
   "modules": [
     {
       "id": "busybox-ndk",
@@ -44,12 +44,12 @@
       "id": "zygisk_lsposed",
       "update": "https://lsposed.github.io/LSPosed/release/zygisk.json",
       "name": "Zygisk - LSPosed",
-      "version": "v1.8.4 (6609)",
-      "versionCode": "6609",
+      "version": "v1.8.5 (6649)",
+      "versionCode": "6649",
       "author": "LSPosed Developers",
       "description": "Another enhanced implementation of Xposed Framework. Supports Android 8.1 ~ 13. Requires Magisk 24.0+ and Zygisk enabled.",
       "states": {
-        "zipUrl": "https://raw.githubusercontent.com/ya0211/magisk-modules-repo/main/modules/zygisk_lsposed/v1.8.4_(6609).zip",
+        "zipUrl": "https://raw.githubusercontent.com/ya0211/magisk-modules-repo/main/modules/zygisk_lsposed/v1.8.5_(6649).zip",
         "changelog": "https://lsposed.github.io/LSPosed/release/changelog.md"
       }
     },

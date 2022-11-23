@@ -1,12 +1,12 @@
 {
-  "timestamp": "2022-11-12 20:59:14.046710",
+  "timestamp": "2022-11-23 11:56:59.889169",
   "modules": [
     {
       "id": "busybox-ndk",
       "update": "https://raw.githubusercontent.com/Magisk-Modules-Repo/busybox-ndk/master/update.json",
       "name": "Busybox for Android NDK",
       "version": "1.34.1",
-      "versionCode": "13412",
+      "versionCode": "13413",
       "author": "osm0sis @ xda-developers",
       "description": "Static busybox binary for all Android architectures built with the NDK",
       "states": {
@@ -19,7 +19,7 @@
       "update": "https://raw.githubusercontent.com/Magisk-Modules-Repo/adb-ndk/master/update.json",
       "name": "ADB & Fastboot for Android NDK",
       "version": "1.0.41",
-      "versionCode": "104108",
+      "versionCode": "104109",
       "author": "osm0sis & Surge1223 @ xda-developers",
       "description": "Static ARM adb and fastboot binaries for Android built with the NDK",
       "states": {
@@ -31,12 +31,12 @@
       "id": "zygisk_shamiko",
       "update": "https://lsposed.github.io/releases/shamiko.json",
       "name": "Shamiko",
-      "version": "v0.5.2 (120)",
-      "versionCode": "120",
+      "version": "v0.6 (126)",
+      "versionCode": "126",
       "author": "LSPosed Developers",
       "description": "\u3053\u308c\u3067\u52dd\u3063\u305f\u3068\u601d\u3046\u306a\u3088\u2015\u2015\u2015!!",
       "states": {
-        "zipUrl": "https://raw.githubusercontent.com/ya0211/magisk-modules-repo/main/modules/zygisk_shamiko/v0.5.2_(120).zip",
+        "zipUrl": "https://raw.githubusercontent.com/ya0211/magisk-modules-repo/main/modules/zygisk_shamiko/v0.6_(126).zip",
         "changelog": "https://github.com/LSPosed/LSPosed.github.io/raw/master/releases/shamiko_changelog.md"
       }
     },
@@ -122,13 +122,13 @@
       "id": "zygisk_ifw_enhance",
       "update": "https://github.com/Kr328/Riru-IFWEnhance/releases/latest/download/zygisk-ifw-enhance.json",
       "name": "Zygisk - IFW Enhance",
-      "version": "v19",
-      "versionCode": "19",
+      "version": "v20",
+      "versionCode": "20",
       "author": "Kr328",
       "description": "Allows Intent Firewall to filter results of queryIntent(Activities/Services) APIs.",
       "states": {
-        "zipUrl": "https://raw.githubusercontent.com/ya0211/magisk-modules-repo/main/modules/zygisk_ifw_enhance/v19.zip",
-        "changelog": "https://github.com/Kr328/Riru-IFWEnhance/releases/download/v19/changelog.md"
+        "zipUrl": "https://raw.githubusercontent.com/ya0211/magisk-modules-repo/main/modules/zygisk_ifw_enhance/v20.zip",
+        "changelog": "https://github.com/Kr328/Riru-IFWEnhance/releases/download/v20/changelog.md"
       }
     },
     {

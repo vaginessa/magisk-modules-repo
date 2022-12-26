@@ -3,19 +3,14 @@ import requests
 from pathlib import Path
 from zipfile import ZipFile
 
-from object import dict_
-
 
 class _Base:
     def __init__(self):
         self._dict = {}
 
+    @property
     def dict(self):
         return self._dict
-
-    @property
-    def dict_(self):
-        return dict_(self._dict)
 
 
 class _LoadJson(_Base):
